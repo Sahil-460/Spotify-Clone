@@ -1,0 +1,696 @@
+/*body{ font-family: "Montserrat", sans-serif;
+color:white;background-color:rgb(0,0,0);overflow:hidden;margin:0
+}
+
+.main{display:flex;
+height:100vh;justify-content:space-between
+}
+
+.sidebar{background-color:black;
+width:340px;border-radius:1rem;
+}
+
+.main-content{background-color:rgba(128,128,128,0.5);
+flex:1;border-radius:1rem;overflow:auto
+}
+
+.music-player{background-color:black;
+position:fixed;bottom:0;width:100%;height:3rem
+}
+
+.nav-option{
+border-radius:1rem;line-height:40px;opacity:0.7;padding:0.5 rem 0.75rem;
+}
+
+a{text-decoration: none; color:white;}
+.nav{display:flex;flex-direction:column;height:100px;justify-content: center;
+padding: 0.5rem 1.5rem;background-color: rgba(128,128,128,0.2);border-radius:10px;width:15rem;margin:15px 0 0 10px
+}
+.nav-option i{font-size: 1.25 rem }
+.nav-option a{ font-size: 1 rem; margin-left:1rem }
+
+.nav-option:hover{opacity:1}
+
+.library{background-color:rgba(128,128,128,0.2) ; border-radius:1.25rem; height:100vh;margin:0.5rem;padding: 0.75rem 0.75rem}
+.library-options{display:flex;flex-direction:row;justify-content:space-between}
+
+img{height:1.2rem;width:1.2rem}
+.options i{height: 1rem;width:1rem;margin-right:1rem;opacity:0.6}
+
+.options i:hover{opacity:1}
+.lib-box-1{height:6rem; width:90%;background-color:rgba(128,128,128,0.4);margin-top:2rem;line-height: 2rem;padding:1rem;border-radius:1rem}
+.lib-box-2{font-weight:600}
+.lib-box-4{border-radius:2rem;height:2rem;width:8rem}
+.lib-box-4:hover{font-size:1rem}
+
+.lib-box-5{height:7.5rem; width:90%;background-color:rgba(128,128,128,0.4);margin-top:2rem;line-height: 2rem;padding:1rem;border-radius: 1rem}
+.lib-box-6{font-weight:600}
+.lib-box-8{border-radius:2rem;height:2rem;width:8rem}
+.lib-box-8:hover{font-size:14px}
+
+
+.sticky-nav{display:flex;justify-content:space-between;position:sticky;top:0;padding:1rem;height:2rem}
+.info{display:flex}
+.premium{margin:0 1rem;height:3rem}
+.install{margin: 0 2rem}
+.user{margin:0 1rem}
+.explore{border-radius:3rem;}*/
+
+/*body{ font-family: "Montserrat", sans-serif;
+color:white;background-color:rgb(0,0,0);overflow:hidden;margin:0
+}
+
+.main{display:flex;
+height:100vh;justify-content:space-between
+}
+
+.sidebar{background-color:black;
+width:340px;border-radius:1rem;
+}
+
+.main-content{background-color:rgba(128,128,128,0.5);
+flex:1;border-radius:1rem;overflow:auto
+}
+
+.music-player{background-color:black;
+position:fixed;bottom:0;width:100%;height:3rem
+}
+
+.nav-option{
+border-radius:1rem;line-height:40px;opacity:0.7;padding:0.5 rem 0.75rem;
+}
+
+a{text-decoration: none; color:white;}
+.nav{display:flex;flex-direction:column;height:100px;justify-content: center;
+padding: 0.5rem 1.5rem;background-color: rgba(128,128,128,0.2);border-radius:10px;width:15rem;margin:15px 0 0 10px
+}
+.nav-option i{font-size: 1.25 rem }
+.nav-option a{ font-size: 1 rem; margin-left:1rem }
+
+.nav-option:hover{opacity:1}
+
+.library{background-color:rgba(128,128,128,0.2) ; border-radius:1.25rem; height:100vh;margin:0.5rem;padding: 0.75rem 0.75rem}
+.library-options{display:flex;flex-direction:row;justify-content:space-between}
+
+img{height:1.2rem;width:1.2rem}
+.options i{height: 1rem;width:1rem;margin-right:1rem;opacity:0.6}
+
+.options i:hover{opacity:1}
+.lib-box-1{height:6rem; width:90%;background-color:rgba(128,128,128,0.4);margin-top:2rem;line-height: 2rem;padding:1rem;border-radius:1rem}
+.lib-box-2{font-weight:600}
+.lib-box-4{border-radius:2rem;height:2rem;width:8rem}
+.lib-box-4:hover{font-size:1rem}
+
+.lib-box-5{height:7.5rem; width:90%;background-color:rgba(128,128,128,0.4);margin-top:2rem;line-height: 2rem;padding:1rem;border-radius: 1rem}
+.lib-box-6{font-weight:600}
+.lib-box-8{border-radius:2rem;height:2rem;width:8rem}
+.lib-box-8:hover{font-size:14px}
+
+
+.sticky-nav{display:flex;justify-content:space-between;position:sticky;top:0;padding:1rem;height:2rem}
+.info{display:flex}
+.premium{margin:0 1rem;height:3rem}
+.install{margin: 0 2rem}
+.user{margin:0 1rem}
+.explore{border-radius:3rem;}*/
+
+
+/* Global styles */
+/*body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.sidebar {
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem;
+}
+
+.main-content {
+  background-color: black;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;margin-left:1rem
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+/* Navigation styles */
+/*.nav-option {
+  border-radius: 1rem;
+  line-height: 40px;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  width: 15rem;
+  margin: 15px 0 0 10px;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+/* Library section */
+/*.library {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 1.25rem;
+  height: 100vh;
+  margin: 0.5rem;
+  padding: 0.75rem 0.75rem;
+}
+
+.library-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.options i {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  opacity: 0.6;
+}
+
+.options i:hover {
+  opacity: 1;
+}
+
+.lib-box-1 {
+  height: 6rem;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-top: 2rem;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.lib-box-2 {
+  font-weight: 600;
+}
+
+.lib-box-4 {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.lib-box-4:hover {
+  font-size: 1rem;
+}
+
+.lib-box-5 {
+  height: 7.5rem;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-top: 2rem;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.lib-box-6 {
+  font-weight: 600;
+}
+
+.lib-box-8 {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.lib-box-8:hover {
+  font-size: 14px;
+}
+
+/* Sticky Navigation Bar */
+/*.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  height: 2rem;
+  align-items:center;
+  background-color: black;
+}
+
+.info {
+  display: flex;
+}
+
+.premium {
+  margin: 0 1rem;
+  ;padding:0.75rem;
+}
+
+.install {
+  margin: 0 2rem;padding:0.75rem;
+}
+
+.user {
+  margin: 0 1rem;font-size:1rem;align-self:center
+}
+
+.explore {
+  border-radius: 2rem;  /* Rounded corners */
+  /*color: black;
+  margin-left:1.5rem;background-color: rgba(0,0,0,0.3);color:white
+}
+
+.install button{border-radius: 1.5rem;font-size:1rem;background-color: rgba(0,0,0,0.3);color:white}
+.arrows img{height:2rem;width:2rem}
+
+.arrows{margin-left:1rem}
+
+.install button i{margin-right:10px}
+
+@media (max-width:1000px) { .for{display:none} }
+
+.card1{height:12rem;width:100%;border-radius:0.5rem}
+
+.card{background-color: rgba(128, 128, 128, 0.2);width:200px;border-radius:0.5rem;
+padding:5px;margin:1rem
+}
+
+.card-title{font-weight:700;}
+.card-info{font-size:0.75rem;opacity:0.75}
+
+.cardcontainer{display:flex;flex-wrap:wrap;}
+
+.footer{height:300px;
+    align-items:center;
+}
+
+.line{ border-top: 1px solid white;
+height:30%;opacity:0.4}
+
+.player{display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;    
+  justify-content: center;
+}
+
+.player img{margin-right:1rem}
+
+.playback-bar{display:flex;height:3.5rem}
+
+.album{width:25%;}
+.playback-bar{width: 25%;}
+.controls{width:25%;}
+
+.player-controls img{height:1rem;}*/
+
+/* Global styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.sidebar {
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem;
+}
+
+.main-content {
+  background-color: black;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;margin-left:1rem
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:3rem
+}
+
+/* Navigation styles */
+.nav-option {
+  border-radius: 1rem;
+  line-height: 40px;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+  width: 15rem;
+  margin: 15px 0 0 10px;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+/* Library section */
+.library {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 1.25rem;
+  height: 100vh;
+  margin: 0.5rem;
+  padding: 0.75rem 0.75rem;
+}
+
+.library-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.options i {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+  opacity: 0.6;
+}
+
+.options i:hover {
+  opacity: 1;
+}
+
+.lib-box-1 {
+  height: 6rem;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-top: 2rem;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.lib-box-2 {
+  font-weight: 600;
+}
+
+.lib-box-4 {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.lib-box-4:hover {
+  font-size: 1rem;
+}
+
+.lib-box-5 {
+  height: 7.5rem;
+  width: 90%;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin-top: 2rem;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.lib-box-6 {
+  font-weight: 600;
+}
+
+.lib-box-8 {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.lib-box-8:hover {
+  font-size: 14px;
+}
+
+/* Sticky Navigation Bar */
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  height: 2rem;
+  align-items:center;
+  background-color: black;
+}
+
+.info {
+  display: flex;
+}
+
+.premium {
+  margin: 0 1rem;
+  ;padding:0.75rem;
+}
+
+.install {
+  margin: 0 2rem;padding:0.75rem;
+}
+
+.user {
+  margin: 0 1rem;font-size:1rem;align-self:center
+}
+
+.explore {
+  border-radius: 2rem;  /* Rounded corners */
+  color: black;
+  margin-left:1.5rem;background-color: rgba(0,0,0,0.3);color:white
+}
+
+.install button{border-radius: 1.5rem;font-size:1rem;background-color: rgba(0,0,0,0.3);color:white}
+.arrows img{height:2rem;width:2rem}
+
+.arrows{margin-left:1rem}
+
+.install button i{margin-right:10px}
+
+@media (max-width:1000px) { .for{display:none} }
+
+.card1{height:12rem;width:100%;border-radius:0.5rem}
+
+.card{background-color: rgba(128, 128, 128, 0.2);width:200px;border-radius:0.5rem;
+padding:5px;margin:1rem
+}
+
+.card-title{font-weight:700;}
+.card-info{font-size:0.75rem;opacity:0.75}
+
+.cardcontainer{display:flex;flex-wrap:wrap;}
+
+.footer{height:300px;
+    align-items:center;
+}
+
+.line{ border-top: 1px solid white;
+height:30%;opacity:0.4}
+
+.player {
+  display: flex;
+  flex-direction:column;
+align-items: center;   /* adds spacing between controls and playback-bar */
+ 
+}
+
+
+.player img{margin-right:1rem}
+
+.playback-bar {
+  display: flex;
+  align-items: center;
+  
+  width: 80%; /* more visible on all screens */
+}
+
+
+
+.album{width:25%;display: flex;
+  justify-content: flex-start;
+  align-items: center;}
+.playback-bar{width: 25%;}
+.controls{width:25%;}
+
+.player-controls img{height:1rem;opacity:0.7}
+
+.player-controls{margin-right:1rem;}
+
+.player-controls img:hover{opacity:1}
+
+.music-player{height:5rem;flex-wrap:wrap}
+
+.progress-bar{width:70%;appearance: none;background-color: transparent;cursor: pointer;}
+
+.progress-bar::-webkit-slider-runnable-track{
+background-color: #ddd;
+height:0.5rem;border-radius:100px;width:5rem
+}
+
+
+.progress-bar::-webkit-slider-thumb{
+appearance: none;
+height:1rem;
+width:1rem;
+border-radius:50%;background-color: green;margin-top:-5px
+}
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 1000;
+}
+.main-content {
+  padding-bottom: 5rem; /* prevent overlapping with player */
+}
+
+.div1{ position:relative;top:30px;left:50px; }
+
+.div1 span{margin-right:15px;}
+
+.div2{display:flex;flex-direction:row;justify-content:center;position:relative;bottom:35px;left:950px;}
+
+.div2 div{margin-right:20px}
+
+.div2 div i{font-size:1.5rem}
+
+.div2 .sound{appearance: none;cursor:pointer;border-radius:50px}
+
+.sound::-webkit-slider-runnable-track{height:10px;}
+
+.sound::-webkit-slider-thumb{height:15px;width:15px;border-radius:50%;appearance: none;
+background-color: green;margin-top:-2px
+}
+
+/* Style for volume range input (Chrome/Edge - WebKit browsers) */
+/*input.sound {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 5px;
+  background: #ffffff50; /* semi-transparent white track */
+  /*border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Track style */
+/*input.sound::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #ffffff50;
+  border-radius: 50px;
+}
+
+/* Thumb (draggable circle) */
+/*input.sound::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  margin-top: -3.5px; /* Center thumb vertically */
+  /*box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+/* Optional: add hover effect */
+/*input.sound:hover::-webkit-slider-thumb {
+  background: #1db954; /* Spotify green */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
