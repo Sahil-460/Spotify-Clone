@@ -1,2 +1,2 @@
 # Spotify-Clone
-Project made by me..
+Project made by me with Only HTML and CSS..
